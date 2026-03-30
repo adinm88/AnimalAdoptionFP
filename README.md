@@ -1,6 +1,6 @@
 # Animal Adoption Web App
 
-A simple Java web application that displays animals available for adoption. Built with **JSP, Servlets, and MySQL**.  The website will allow users to view animals that are available for adoption and also search up animals with filters. Users can fill out a form to show interest in adopting a pet, while an admin page will allow animals to be added or updated. This project is a full web application with JSP, Servlets, and MySQL.
+A simple Java web application that displays animals available for adoption which is built with JSP, Servlets, and MySQL.  The website will allow users to view animals that are available for adoption and also search up animals with filters. Users can fill out a form to show interest in adopting a pet, while an admin page will allow animals to be added or updated. This project is a full web application with JSP, Servlets, and MySQL.
 
 ## Features
 
