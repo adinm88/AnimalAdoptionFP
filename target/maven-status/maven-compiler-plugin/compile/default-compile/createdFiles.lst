@@ -1,0 +1,6 @@
+com\mycompany\animaladoptionfp\resources\JakartaEE10Resource.class
+com\mycompany\animaladoptionfp\AnimalDAO.class
+com\mycompany\animaladoptionfp\JakartaRestConfiguration.class
+controllers\AnimalServlet.class
+com\mycompany\animaladoptionfp\Animal.class
+com\mycompany\animaladoptionfp\DBConnection.class
