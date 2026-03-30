@@ -1,6 +1,6 @@
 # Animal Adoption Web App
 
-A simple Java web application that displays animals available for adoption. Built with **JSP, Servlets, and MySQL**.
+A simple Java web application that displays animals available for adoption. Built with **JSP, Servlets, and MySQL**.  The website will allow users to view animals that are available for adoption and also search up animals with filters. Users can fill out a form to show interest in adopting a pet, while an admin page will allow animals to be added or updated. This project is a full web application with JSP, Servlets, and MySQL.
 
 ## Features
 
@@ -13,7 +13,7 @@ A simple Java web application that displays animals available for adoption. Buil
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/AnimalAdoptionFP.git
+git clone https://github.com/adinm88/AnimalAdoptionFP.git
 ```
 
 2. Create the database and table:
@@ -35,7 +35,7 @@ INSERT INTO animals (name, species, breed, age) VALUES
 ('Mittens', 'Cat', 'Siamese', 2);
 ```
 
-3. Update `DBConnection.java` with your MySQL username and password.
+3. Update `DBConnection.java` with your MySQL username and password. Currently in there is a sample one used by me.
 4. Run the project in NetBeans with Tomcat.
 5. Open the app in your browser:
 
