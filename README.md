@@ -45,4 +45,4 @@ http://localhost:8080/AnimalAdoptionFP/animals
 
 ## Future Work
 
-- Add adoption request
+- Finish Capabilities 3, 4, 5, 6, and 7
