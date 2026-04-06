@@ -16,7 +16,7 @@ import com.mycompany.animaladoptionfp.*;
  *
  * @author adinm
  */
-@WebServlet(name = "AnimalServlet", urlPatterns = {"/animals"})
+@WebServlet("/AnimalServlet")
 public class AnimalServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

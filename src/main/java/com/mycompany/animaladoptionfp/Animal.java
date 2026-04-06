@@ -12,7 +12,6 @@ public class Animal {
     private int id;
     private String name;
     private String species;
-    private String breed;
     private int age;
 
     
@@ -34,9 +33,6 @@ public class Animal {
         return species;
     }
 
-    public String getBreed() {
-        return breed;
-    }
 
     public int getAge() {
         return age;
@@ -54,11 +50,7 @@ public class Animal {
     public void setSpecies(String species) {
         this.species = species;
     }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
-
+    
     public void setAge(int age) {
         this.age = age;
     }

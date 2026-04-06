@@ -1,10 +1,8 @@
 <%-- 
     Document   : index
-    Created on : Mar 22, 2026, 8:47:48 AM
     Author     : adinm
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ include file="header.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,6 +12,5 @@
     <body>
         <h1>Animal Adoption Center</h1>
         
-        <a href="animals">View Animals</a>
     </body>
 </html>

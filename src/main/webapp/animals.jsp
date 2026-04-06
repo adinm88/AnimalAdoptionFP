@@ -1,24 +1,17 @@
 <%-- 
     Document   : animals
-    Created on : Mar 22, 2026, 8:48:55 AM
     Author     : adinm
 --%>
+<%@ include file="header.jsp" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Animals</title>
-    </head>
-    <body>
-        <h2>Animals Avaliable</h2>
-        
-        <c:forEach var="animal" items="${animals}">
-            <p>
-            ${animal.name} - ${animal.species}
-            </p>
-        </c:forEach>
-        <a href="index.jsp">Home</a>
-    </body>
-</html>
+<%@ page import="com.mycompany.animaladoptionfp.Animal" %>
+
+<h2>Available Animals</h2>
+
+<c:if test="${empty animals}">
+    <p>No animals found!</p>
+</c:if>
+
+<c:forEach var="animal" items="${animals}">
+    <p>${animal.id} - ${animal.name} - ${animal.species} - ${animal.age}</p>
+</c:forEach>

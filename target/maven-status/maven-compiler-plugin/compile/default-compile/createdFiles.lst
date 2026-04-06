@@ -1,6 +1,12 @@
-com\mycompany\animaladoptionfp\resources\JakartaEE10Resource.class
 com\mycompany\animaladoptionfp\AnimalDAO.class
 com\mycompany\animaladoptionfp\JakartaRestConfiguration.class
 controllers\AnimalServlet.class
+controllers\CreateAnimalServlet.class
+com\mycompany\animaladoptionfp\UserDAO.class
+controllers\LogoutServlet.class
+com\mycompany\animaladoptionfp\resources\JakartaEE10Resource.class
 com\mycompany\animaladoptionfp\Animal.class
 com\mycompany\animaladoptionfp\DBConnection.class
+com\mycompany\animaladoptionfp\User.class
+controllers\CreateUserServlet.class
+controllers\LoginServlet.class
