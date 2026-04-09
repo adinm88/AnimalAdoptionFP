@@ -1,0 +1,62 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 8, 2026, 6:30:15 AM
+    Author     : adinm
+*/
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Top section */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Button */
+.button {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #4CAF50;
+}
+
+.button:hover {
+    background-color: #dddddd;
+}
+
+/* Info section */
+.info {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Cards container */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual card */
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid #cccccc;
+}
+
+img {
+    length: 350px;
+    width: 350px;
+}

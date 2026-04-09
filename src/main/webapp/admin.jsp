@@ -15,7 +15,8 @@ if (role == null || !role.equals("ADMIN")) {
 %>
 <h2>Admin Panel</h2>
 
-<a href="createUser.jsp">Create User</a><br/><br/>
+<a href="createUser.jsp">Create User</a> <a href="listUsers.jsp">List Users</a><br/><br/>
+
 
 <h3>Create Animal</h3>
 
