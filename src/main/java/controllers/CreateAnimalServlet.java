@@ -21,23 +21,41 @@ import jakarta.servlet.http.HttpSession;
 public class CreateAnimalServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request,
-                          HttpServletResponse response)
-                          throws ServletException, IOException {
+                        HttpServletResponse response)
+            throws ServletException, IOException {
 
         HttpSession session = request.getSession(false);
 
-        // SECURITY CHECK
-        if (session == null ||
-            !"ADMIN".equals(session.getAttribute("role"))) {
-
+        if (session == null || !"ADMIN".equals(session.getAttribute("role"))) {
             response.sendRedirect("index.jsp");
             return;
         }
 
         String name = request.getParameter("name");
         String species = request.getParameter("species");
-        int age = Integer.parseInt(request.getParameter("age"));
+        String ageStr = request.getParameter("age");
 
+        // validation
+        if (name == null || name.isEmpty() ||
+            species == null || species.isEmpty() ||
+            ageStr == null || ageStr.isEmpty()) {
+
+            request.setAttribute("error", "All fields are required.");
+            request.getRequestDispatcher("admin.jsp").forward(request, response);
+            return;
+        }
+
+        int age;
+
+        try {
+            age = Integer.parseInt(ageStr);
+        } catch (NumberFormatException e) {
+            request.setAttribute("error", "Age must be a valid number.");
+            request.getRequestDispatcher("admin.jsp").forward(request, response);
+            return;
+        }
+
+        // database insert
         AnimalDAO dao = new AnimalDAO();
         dao.createAnimal(name, species, age);
 

@@ -4,6 +4,7 @@ controllers\AnimalServlet.class
 controllers\CreateAnimalServlet.class
 com\mycompany\animaladoptionfp\UserDAO.class
 controllers\LogoutServlet.class
+controllers\UserServlet.class
 com\mycompany\animaladoptionfp\resources\JakartaEE10Resource.class
 com\mycompany\animaladoptionfp\Animal.class
 com\mycompany\animaladoptionfp\DBConnection.class

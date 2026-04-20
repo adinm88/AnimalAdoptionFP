@@ -26,6 +26,13 @@ public class LoginServlet extends HttpServlet {
 
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        
+        if (username == null || username.isEmpty() ||
+        password == null || password.isEmpty()) {
+            request.setAttribute("error", "Please fill in all fields.");
+            request.getRequestDispatcher("login.jsp").forward(request, response);
+            return;
+        }
 
         UserDAO dao = new UserDAO();
         User user = dao.validate(username, password);
