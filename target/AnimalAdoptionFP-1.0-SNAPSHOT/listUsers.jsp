@@ -15,11 +15,30 @@ if (role == null || !role.equals("ADMIN")) {
     return;
 }
 %>
+<div class="container mt-4">
+
 <h2>Users</h2>
 
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Role</th>
+        </tr>
+    </thead>
 
-<c:forEach var="user" items="${users}">
-    <p style="color: black; font-family: Arial, sans-serif;">${user.id} - ${user.username} - ${user.role}</p>
-</c:forEach>
+    <tbody>
+        <c:forEach var="user" items="${users}">
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.role}</td>
+            </tr>
+        </c:forEach>
+    </tbody>
+</table>
+
+</div>
     
 <p style="color: red;">For admins only.</p>

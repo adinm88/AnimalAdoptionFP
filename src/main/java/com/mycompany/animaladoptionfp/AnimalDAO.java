@@ -56,4 +56,16 @@ public class AnimalDAO {
             e.printStackTrace();
         }
     }
+    
+    public static void deleteAnimal(int id) {
+        String sql = "DELETE FROM animals WHERE id = ?";
+        try {Connection conn = DBConnection.getConnection();
+           
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

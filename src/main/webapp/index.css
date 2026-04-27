@@ -60,3 +60,15 @@ img {
     length: 350px;
     width: 350px;
 }
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #heading {
+        flex-direction: column;
+        text-align: center;
+    }
+}

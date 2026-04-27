@@ -28,6 +28,24 @@ public class AnimalServlet extends HttpServlet {
     
         // Send to JSP
         request.setAttribute("animals", animals);
+        String action = request.getParameter("action");
+
+        if ("delete".equals(action)) {
+
+            // SECURITY CHECK (important)
+            String role = (String) request.getSession().getAttribute("role");
+
+            if (role == null || !role.equals("ADMIN")) {
+                response.sendRedirect("animals.jsp");
+                return;
+            }
+
+            int id = Integer.parseInt(request.getParameter("id"));
+            AnimalDAO.deleteAnimal(id);
+
+            response.sendRedirect("AnimalServlet?action=list");
+            return;
+        }
 
         // Forward to view
         request.getRequestDispatcher("animals.jsp")
