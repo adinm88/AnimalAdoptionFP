@@ -42,6 +42,7 @@
 
     </div>
 </div>
-
+<p>Log in to start adopting animals today!</p>
+<p>Contact 111-222-3333 or example@animaladoptioncenter.com to set up an account today</p>
 </body>
 </html>

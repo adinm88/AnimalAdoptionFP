@@ -7,7 +7,7 @@
 <%@ page import="com.mycompany.animaladoptionfp.Animal" %>
 
 ]
-
+<%-- Shows animals avaliable to adopt --%>
 <div class="container mt-4">
 
     <h2 class="text-center">Available Animals to Adopt</h2>
